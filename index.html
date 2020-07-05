@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/tic-tac-toe.svg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="flex">
+      <div class="info">
+        <h1>Tic Tac Toe</h1>
+        <div class="Scores">
+          <div class="XScore">Player X <span id="X">0</span></div>
+          <div class="tie">Tie<span id="tie">0</span></div>
+          <div class="OScore">Player O<span id="O">0</span></div>
+          <button class="btn btn-lg btn-primary reset" type="button" name="button">Reset Scores</button>
+        </div>
+      </div>
+      <div class="playArea">
+        <p class="turn">Player X will start the game</p>
+        <div class="gameContainer">
+          <!-- <svg class="line"height="420" width="420">
+            <line x1="30" y1="30" x2="420" y2="420" style="stroke:rgb(255,0,0);stroke-width:2" />
+          </svg> -->
+          <div class="row1 strike invisible"></div>
+          <div class="row2 strike invisible"></div>
+          <div class="row3 strike invisible"></div>
+          <div class="col1 strike invisible"></div>
+          <div class="col2 strike invisible"></div>
+          <div class="col3 strike invisible"></div>
+          <div class="dgn1 strike invisible"></div>
+          <div class="dgn2 strike invisible"></div>
+          <div id="1" class="box1 box"></div>
+          <div id="2" class="box2 box"></div>
+          <div id="3" class="box3 box"></div>
+          <div id="4" class="box4 box"></div>
+          <div id="5" class="box5 box"></div>
+          <div id="6" class="box6 box"></div>
+          <div id="7" class="box7 box"></div>
+          <div id="8" class="box8 box"></div>
+          <div id="9" class="box9 box"></div>
+        </div>
+        <button class="btn btn-lg btn-success restart" type="button" name="button">Restart</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+</html>
